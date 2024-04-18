@@ -16,14 +16,14 @@ import Tilt from 'react-parallax-tilt';
 
 const Skills = () => {
   return (
-    <div name='skill' className=' w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div name='skills' className=' w-full h-screen bg-[#0a192f] text-gray-300 uppercase'>
         {/* Container */}
         <div className=' max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
                 <p className=' text-4xl inline font-bold border-b-4 border-[#62609D] '>Skills</p>
             </div>
 
-            <div className=' w-full grid grid-cols-3 sm:grid-cols-4 gap-4 text-center py-8 uppercase'>
+            <div className=' w-full grid grid-cols-3 sm:grid-cols-4 gap-4 text-center py-8 '>
             
             <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>              
             <Tilt className="background-stripes parallax-effect hover:background-stripes hover:parallax-effect" perspective={500}>         
@@ -45,69 +45,68 @@ const Skills = () => {
                     <p className='pb-2 text-xs sm:text-[18px]'>JavaScript</p>
             </Tilt>
             </div>
-            
-            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
+
             <Tilt className="background-stripes parallax-effect" perspective={500}>
+            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-11 sm:w-20 mx-auto py-4' src={tailwind} alt="html" />
                     <p className=' pb-2 text-xs sm:text-[18px]'>Tailwind</p>
-            </Tilt>
             </div>
+            </Tilt>
 
-            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
             <Tilt className="background-stripes parallax-effect" perspective={500}>
+            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-11 sm:w-20 mx-auto py-4' src={react} alt="html" />
                     <p className=' pb-2 text-xs sm:text-[18px]'>React</p>
-            </Tilt>
             </div>
-            
-            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
+            </Tilt>
+
             <Tilt className="background-stripes parallax-effect" perspective={500}>
+            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-11 sm:w-20 mx-auto py-4' src={node} alt="html" />
                     <p className=' pb-2 text-xs sm:text-[18px]'>Node js</p>
-            </Tilt>
             </div>
-            
-            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
+            </Tilt>
+
             <Tilt className="background-stripes parallax-effect" perspective={500}>
+            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-11 sm:w-20 mx-auto py-4' src={express} alt="html" />
                     <p className=' pb-2 text-xs sm:text-[18px]'>Express Js</p>
-            </Tilt>
             </div>
-            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
+            </Tilt>
+
             <Tilt className="background-stripes parallax-effect" perspective={500}>
+            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-11 sm:w-20 mx-auto py-4' src={mongo} alt="html" />
                     <p className=' pb-2 text-xs sm:text-[18px]'>mongo db</p>
-            </Tilt>
             </div>
-            
-            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
+            </Tilt>
+
             <Tilt className="background-stripes parallax-effect" perspective={500}>
+            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-11 sm:w-20 mx-auto py-4' src={sql} alt="html" />
                     <p className=' pb-2 text-xs sm:text-[18px]'>MySql</p>
-            </Tilt>
             </div>
-            
-            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
+            </Tilt>
+
             <Tilt className="background-stripes parallax-effect" perspective={500}>
+            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-11 sm:w-20 mx-auto py-4' src={docker} alt="html" />
                     <p className=' pb-2 text-xs sm:text-[18px]'>Docker</p>
-            </Tilt>
             </div>
-
-            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
+            </Tilt>
             <Tilt className="background-stripes parallax-effect" perspective={500}>
+            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-11 sm:w-20 mx-auto py-4' src={java} alt="html" />
                     <p className=' pb-2 text-xs sm:text-[18px]'>Java</p>
-            </Tilt>
             </div>
+            </Tilt>
 
-
-            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
             <Tilt className="background-stripes parallax-effect" perspective={500}>
+            <div className=' shadow-md rounded-sm shadow-[#040c16] hover:scale-110 duration-500'>
                     <img className='w-11 sm:w-20 mx-auto py-4' src={github} alt="html" />
                     <p className=' pb-2 text-xs sm:text-[18px]'>github</p>
-            </Tilt>
             </div>
+            </Tilt>
             
             </div>
         </div>

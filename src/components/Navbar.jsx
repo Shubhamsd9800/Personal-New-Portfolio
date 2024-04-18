@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../assets/p3.png'
+import Logo from '../assets/p4.png'
 import { RiMenuSearchFill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 import { FaGithub,FaLinkedin } from "react-icons/fa";
@@ -16,14 +16,14 @@ const Navbar = () => {
     document.body.style.overflow= nav? 'auto' : 'hidden';
     };
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-       <div>
-            <img src={Logo} alt="Logo" className='w-[75px]' />
+    <div className='fixed z-50 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+       <div className=' ml-16 mt-3'>
+            <img src={Logo} alt="Logo" className='w-[100px]' />
        </div>
 
 
         {/* menu */}
-        <ul className='hidden md:flex'>
+        <ul className='hidden md:flex '>
             <li>
             <Link to='home' smooth={true} duration={500}>
             Home
@@ -42,7 +42,7 @@ const Navbar = () => {
 
             <li>
             <Link 
-            to="skill" 
+            to="skills" 
             smooth={true} 
             offset={50} 
             duration={500} 
@@ -85,9 +85,9 @@ const Navbar = () => {
        </div>
 
        {/* Mobile Menu */}
-     
+       <div  className={ !nav ? 'hidden' : 'absolute z-100 top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
        <ul
-            className={ !nav ? 'hidden' : 'absolute z-100 top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}
+           className=' mb-40'
        >
             <li className='py-5 text-3xl '> <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
@@ -102,7 +102,7 @@ const Navbar = () => {
             About
             </Link></li>
             <li className='py-5 text-3xl '><Link 
-            to="skill" 
+            to="skills" 
             onClick={handleClick}
             smooth={true} 
             offset={50} 
@@ -130,6 +130,9 @@ const Navbar = () => {
             </Link></li>
         </ul>
 
+       </div>
+     
+       
         
 
         {/* Social icons */}
