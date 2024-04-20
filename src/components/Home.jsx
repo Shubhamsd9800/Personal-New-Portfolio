@@ -11,12 +11,12 @@ const Home = () => {
     <div className="md:hidden w-full mx-auto h-[400px] bg-cover bg-center filter blur-md" style={{backgroundImage: "url('https://media.istockphoto.com/id/1577713699/photo/holi-background.webp?b=1&s=170667a&w=0&k=20&c=i4qrAm49T20gzgLlr3nERgPIWdQQCCphcYQw3RQBdJ8=')"}}></div>
     
     {/* Profile Image */}
-    <div className="md:hidden w-[170px] relative top-[-99px]">
+    <div className="md:hidden w-[140px] relative top-[-70px]">
         <img src={lgo} alt="Your Image" className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 rounded-full shadow-lg" />
     </div>
 
     {/* Contact Button */}
-    <div className="md:hidden mx-auto relative top-[-120px] -right-28">
+    <div className="md:hidden mx-auto relative top-[-120px] -right-20">
        <a href="mailto:subhamdas9800@gmail.com">
        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
         <span className="flex items-center space-x-2 relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
