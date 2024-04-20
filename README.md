@@ -1,3 +1,29 @@
+# Personal Portfolio
+
+This is my personal portfolio website created using React. It showcases my skills, projects, and contact information.
+
+## Features
+
+- **Responsive Design**: The website is fully responsive and works seamlessly across different devices and screen sizes.
+- **Dynamic Content**: Content is dynamically generated using React components, allowing for easy updates and modifications.
+- **Flowbite Tailwind Library**: Utilized the [Flowbite Tailwind](https://flowbite.com/) library to streamline the design process and obtain ready-made components for building the user interface.
+- **AOS Animation Library**: Integrated the [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) library to add smooth and attractive animations to elements as they come into view while scrolling.
+
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces.
+- [Flowbite Tailwind](https://flowbite.com/): A library built on top of Tailwind CSS, providing pre-designed components and utilities for faster development.
+- [AOS](https://michalsnik.github.io/aos/): Animate On Scroll library for adding animations to elements based on scroll events.
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone <https://github.com/Shubhamsd9800/Personal-New-Portfolio>
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

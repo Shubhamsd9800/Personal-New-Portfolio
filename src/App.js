@@ -12,7 +12,7 @@ const App = () => {
     Aos.init();
   },[])
   return (
-    <div>
+    <div className=' overflow-x-hidden'>
       <Navbar/>
       <Home/>
       <About/>

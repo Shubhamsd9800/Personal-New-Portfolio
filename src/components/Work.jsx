@@ -145,8 +145,8 @@ const Work = () => {
 
             </div>
         </div>
-        <div className="mt-8 text-center">
-        <p>© 2024 Shubham Das. 🌟 All rights reserved. 🚀</p>
+        <div className="mt-8 text-center text-xs">
+        <p>© 2024 Shubham Das 🌟</p>
     </div>
     </div>
   )

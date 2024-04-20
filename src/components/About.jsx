@@ -13,7 +13,7 @@ const Abouts = () => {
             </div>
                 <div className=' max-w-[1000px] w-full grid sm:grid-cols-2  gap-8 px-4'>
                     <div className=' sm:text-right text-3xl font-bold'  data-aos="fade-right" data-aos-duration='1000'>
-                        <p>Hi, Shubhamm this side, nice to meet you, Please take a look around</p>
+                        <p>Hi, Shubham this side, nice to meet you, Please take a look around</p>
                     </div>
                     <div  data-aos="fade-left" data-aos-duration='1000'>
                          <p>Full-stack developer 🚀 striving to excel in the software industry through innovative ideas.

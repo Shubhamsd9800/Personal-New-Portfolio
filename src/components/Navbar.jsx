@@ -25,7 +25,10 @@ const Navbar = () => {
     <div className='fixed z-50 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
        
         <div className=' md:ml-16 mt-3 cursor-pointer' data-aos="fade-right" data-aos-duration="950">
-        <Link to='home'>
+        <Link to='home'
+         smooth={true} 
+         offset={50} 
+         duration={500} >
             <img src={Logo} alt="Logo" className='w-[80px] md:w-[100px]' />    
        </Link>
         </div>
@@ -35,14 +38,15 @@ const Navbar = () => {
 
 
         {/* menu */}
-        <ul className='hidden md:flex ' data-aos="fade-left" data-aos-duration="950">
+        <ul className='hidden md:flex gap-6 ' data-aos="fade-left" data-aos-duration="950">
 
-            <li>
+            <li className='ease-linear transform hover:scale-110 transition duration-300 hover:border-b-2'>
             <Link to='home' smooth={true} duration={500}>
             Home
             </Link>
             </li>
-            <li>
+            
+            <li className='ease-linear transform hover:scale-110 transition duration-300 hover:border-b-2'>
             <Link 
             to="about" 
             smooth={true} 
@@ -53,7 +57,7 @@ const Navbar = () => {
             </Link>
             </li>
 
-            <li>
+            <li className='ease-linear transform hover:scale-110 transition duration-300 hover:border-b-2'>
             <Link 
             to="skills" 
             smooth={true} 
@@ -64,7 +68,7 @@ const Navbar = () => {
             </Link>
             </li>
 
-            <li>
+            <li className='ease-linear transform hover:scale-110 transition duration-300 hover:border-b-2'>
             <Link 
             to="work"
             smooth={true} 
@@ -77,14 +81,17 @@ const Navbar = () => {
 
         </ul>
 
+        <a href="mailto:subhamdas9800@gmail.com">
         <button
-            className="hidden md:inline-flex relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
+            className="hidden md:inline-flex relative items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
         >
             <span className="flex items-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 <span>Contact Me</span>
                 <GoPerson className="ml-2 text-[20px]" />
             </span>
         </button>
+        </a>
+        
        
 
 
@@ -99,10 +106,10 @@ const Navbar = () => {
        {/* Mobile Menu */}
        <div  className={ !nav ? 'hidden'  : 'absolute z-100 top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center gap-5' } data-aos="fade-right" data-aos-duration='400'>
        <ul className=''>
-            <li className='py-5 text-3xl '> <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+            <li className='py-5 text-2xl ease-linear transform hover:scale-125 transition duration-300'> <Link onClick={handleClick} to='home' smooth={true} duration={500}>
             Home
             </Link></li>
-            <li className='py-5 text-3xl '><Link 
+            <li className='py-5 text-2xl ease-linear transform hover:scale-125 transition duration-300 '><Link 
             to="about" 
             onClick={handleClick}
             smooth={true} 
@@ -111,7 +118,7 @@ const Navbar = () => {
             >
             About
             </Link></li>
-            <li className='py-5 text-3xl '><Link 
+            <li className='py-5 text-2xl ease-linear transform hover:scale-125 transition duration-300'><Link 
             to="skills" 
             onClick={handleClick}
             smooth={true} 
@@ -120,7 +127,7 @@ const Navbar = () => {
             >
             Skills
             </Link></li>
-            <li className='py-5 text-3xl '><Link 
+            <li className='py-5 text-2xl ease-linear transform hover:scale-125 transition duration-300'><Link 
             to="work"
             onClick={handleClick}
             smooth={true} 
@@ -131,32 +138,32 @@ const Navbar = () => {
             </Link></li>
         </ul>
            <ul className='flex mb-52'>
-           <li>
+           <li className='animate-bounce'>
             <a href="https://www.linkedin.com/in/shubham-das-562834221/">
-                <FiLinkedin className='text-[#05689d]' size={30}/>
+                <FiLinkedin className='text-[#05689d]' size={25}/>
                 </a>
             </li>
-            <li>
+            <li className='animate-bounce'>
             <a href="https://github.com/Shubhamsd9800">
-            <LuGithub  className=' text-[#2a9d8f]' size={30} />
+            <LuGithub  className=' text-[#2a9d8f]' size={25} />
                 </a>
             </li>
-            <li>
+            <li className='animate-bounce'>
                 <a href="https://leetcode.com/subhamdas9800/">
-                <SiLeetcode className=' text-[#f19916]' size={30}/>
+                <SiLeetcode className=' text-[#f19916]' size={25}/>
                 </a>
             </li>
             
             
-            <li>
+            <li className='animate-bounce'>
             <a href="https://twitter.com/Shubhammmmm444">
-            <RiTwitterXLine size={30}/>
+            <RiTwitterXLine size={25}/>
                 </a>
             </li>
            
-            <li>
+            <li className='animate-bounce'>
             <a href="https://drive.google.com/file/d/1Hl6vvUT1NRXuZIAgq1OQ5N9LBD1dnQC1/view?usp=sharing">
-             <GrResume className='text-[#344955]' size={30}/>
+             <GrResume className='text-[#344955]' size={25}/>
                 </a>
             </li>
            </ul> 
