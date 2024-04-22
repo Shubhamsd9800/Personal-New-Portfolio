@@ -8,10 +8,10 @@ const Home = () => {
   return (
     <div name='home' className='bg-[#0a192f] w-full h-screen relative flex flex-col'>
     {/* Blurred Background */}
-    <div className="md:hidden w-full mx-auto h-[400px] bg-cover bg-center filter blur-md" style={{backgroundImage: "url('https://media.istockphoto.com/id/1577713699/photo/holi-background.webp?b=1&s=170667a&w=0&k=20&c=i4qrAm49T20gzgLlr3nERgPIWdQQCCphcYQw3RQBdJ8=')"}}></div>
+    <div className="md:hidden w-full mx-auto h-[400px] bg-cover bg-center filter blur-md" style={{backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgf1vMb6JihlWX5PwkqGkou5a-mO4v8uPbeN206bwaeg&s')"}}></div>
     
     {/* Profile Image */}
-    <div className="md:hidden w-[160px] relative top-[-90px]">
+    <div className="md:hidden w-[160px] relative top-[-95px]">
         <img src={lgo} alt="Your Image" className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 rounded-full shadow-lg" />
     </div>
 
