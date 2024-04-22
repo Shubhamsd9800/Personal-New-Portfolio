@@ -2,7 +2,7 @@ import React from 'react'
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from 'react-scroll';
 import lgo from '../assets/porti.png'
-
+import { FaRegAddressBook } from "react-icons/fa6";
 import { GoPerson } from "react-icons/go";
 const Home = () => {
   return (
@@ -16,16 +16,30 @@ const Home = () => {
     </div>
 
     {/* Contact Button */}
+    <div className='flex flex-col gap-2'>
     <div className="md:hidden mx-auto relative top-[-120px] -right-24">
        <a href="mailto:subhamdas9800@gmail.com">
        <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
         <span className="flex items-center space-x-2 relative px-2 py-1.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
             <span>Contact Me</span>
-            <GoPerson className='text-[20px]' />
+            <GoPerson className='text-[20px] animate-pulse' />
         </span>
     </button></a> 
    
     </div>
+
+    
+    <div className='md:hidden mx-auto relative top-[-120px] -right-24'>
+        <a href="https://drive.google.com/file/d/1Hl6vvUT1NRXuZIAgq1OQ5N9LBD1dnQC1/view?usp=sharing">
+        <button type="button" class="relative inline-flex items-center p-2 text-sm font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <FaRegAddressBook className=' text-2xl animate-pulse'/>
+        </button>
+        </a>
+        
+    </div> 
+
+    </div>
+    
     {/* Main Content */}
     <div className='max-w-[1000px] mx-auto px-8 flex flex-col md:justify-center h-full justify-start items-start '>
     <p className='text-[#62609D] text-[20px]'>Hi, my name is</p>
