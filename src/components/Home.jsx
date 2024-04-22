@@ -4,11 +4,12 @@ import { Link } from 'react-scroll';
 import lgo from '../assets/porti.png'
 import { FaRegAddressBook } from "react-icons/fa6";
 import { GoPerson } from "react-icons/go";
+import bg from '../assets/bg-color-port.png'
 const Home = () => {
   return (
     <div name='home' className='bg-[#0a192f] w-full h-screen relative flex flex-col'>
     {/* Blurred Background */}
-    <div className="md:hidden w-full mx-auto h-[450px] bg-cover bg-center filter blur-md" style={{backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgf1vMb6JihlWX5PwkqGkou5a-mO4v8uPbeN206bwaeg&s')"}}></div>
+    <div className="md:hidden w-full mx-auto h-[450px] bg-cover bg-center filter blur-md" style={{backgroundImage: `url(${bg})`}}></div>
     
     {/* Profile Image */}
     <div className="md:hidden w-[160px] relative top-[-85px]">
