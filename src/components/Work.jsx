@@ -7,6 +7,7 @@ import { FaGithub } from 'react-icons/fa';
 import password from '../assets/password.png'
 import meme from '../assets/meme.png'
 import codeye from '../assets/codeye.png'
+import cryptoapp from '../assets/cryptoapp.png'
 const Work = () => {
   return (
     <div name='work' className=' w-full bg-[#0a192f] md:h-full text-gray-300 '>
@@ -18,6 +19,29 @@ const Work = () => {
 
             <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
             
+             {/* grid item */}
+             <div style={{backgroundImage: `url(${cryptoapp})`, backgroundSize:'cover'}}
+                data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" 
+                 className=' shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    
+                    {/* hover */}
+                    <div className="opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-10 group-hover:translate-y-0">
+                        <span className="text-2xl font-bold text-white tracking-wider">
+                            CryptoQuill
+                        </span>
+                        <div className="pt-8 text-center flex justify-center items-center">
+                            <a href="https://cryptobasequill.web.app/">
+                                <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                                    Live
+                                </button>
+                            </a>
+                            <a href="https://github.com/Shubhamsd9800/CryptoQuill" className="flex items-center justify-center">
+                                <FaGithub className="text-[50px] text-white ml-4" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             {/* grid item */}
                 <div style={{backgroundImage: `url(${project1})`}}
                 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" 
