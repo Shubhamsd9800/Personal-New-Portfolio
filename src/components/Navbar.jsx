@@ -160,9 +160,9 @@ const Navbar = () => {
             <RiTwitterXLine size={25}/>
                 </a>
             </li>
-           
+           {/* Resume update */}
             <li className='animate-bounce'>
-            <a href="https://drive.google.com/file/d/1zcV9p1vjF3MHS7NHWtlyTfzvl29UG6so/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1wyfPKe71u57deOJ2c1KA_EpF0W04hSjq/view?usp=sharing">
              <GrResume className='text-[#344955]' size={25}/>
                 </a>
             </li>
@@ -200,9 +200,10 @@ const Navbar = () => {
                Twitter<BsTwitterX size={30}/>
             </a>
         </li>
+        {/* Resume Update */}
         <li className='w-[160px] h-[60px] flex 0px 5px 15px; rounded-md justify-between items-center ml-[-100px] hover:bg-[#2a9387] hover:ml-[-10px] duration-300 bg-[#3da095] hover:shadow-custom-hover'>
             <a className='flex justify-between items-center w-full text-gray-300'
-             href="https://drive.google.com/file/d/1zcV9p1vjF3MHS7NHWtlyTfzvl29UG6so/view?usp=sharing">
+             href="https://drive.google.com/file/d/1wyfPKe71u57deOJ2c1KA_EpF0W04hSjq/view?usp=sharing">
                 Resume<BsFillPersonLinesFill size={30}/>
             </a>
         </li>

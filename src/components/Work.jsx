@@ -8,6 +8,7 @@ import password from '../assets/password.png'
 import meme from '../assets/meme.png'
 import codeye from '../assets/codeye.png'
 import cryptoapp from '../assets/cryptoapp.png'
+import cloudcomm from '../assets/cloudcomm.png'
 const Work = () => {
   return (
     <div name='work' className=' w-full bg-[#0a192f] md:h-full text-gray-300 '>
@@ -19,6 +20,29 @@ const Work = () => {
 
             <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
             
+            {/* grid item */}
+            <div style={{backgroundImage: `url(${cloudcomm})`, backgroundSize:'cover'}}
+                data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" 
+                 className=' shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    
+                    {/* hover */}
+                    <div className="opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-10 group-hover:translate-y-0">
+                        <span className="text-2xl font-bold text-white tracking-wider">
+                            CloudComm
+                        </span>
+                        <div className="pt-8 text-center flex justify-center items-center">
+                            <a href="https://cloud-comm.vercel.app/">
+                                <button className="text-center rounded-lg px-8 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                                    Live
+                                </button>
+                            </a>
+                            <a href="https://github.com/Shubhamsd9800/CloudComm" className="flex items-center justify-center">
+                                <FaGithub className="text-[50px] text-white ml-4" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
              {/* grid item */}
              <div style={{backgroundImage: `url(${cryptoapp})`, backgroundSize:'cover'}}
                 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" 
@@ -149,21 +173,6 @@ const Work = () => {
                 </div>
 
 
-
-                {/* grid item */}
-                <div class="shadow-[#040c16]  p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">AuthzApp</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Implemented user sign-up and sign-in features with secure access control, enhancing authentication to prevent unauthorized access.</p>
-                    <a href="https://github.com/Shubhamsd9800/AuthApp" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Read more
-                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </a>
-                </div>
 
                 
 
